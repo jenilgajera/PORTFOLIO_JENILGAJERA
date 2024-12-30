@@ -1,0 +1,206 @@
+/* General link styling */
+a {
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+#Home{
+  height: 200px;
+}
+.nav-large .nav-link {
+  font-size: 1.85rem; /* Default size for larger screens */
+  font-weight: 500;   /* Optional: To make the text slightly bold */
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #6c5fff, #7f7bfe); /* Gradient colors */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem; /* Adjust for larger size */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  letter-spacing: 2px; /* Adds spacing between letters */
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.text-gradient:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+}
+
+.nav-hover {
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #007bff; /* Blue underline */
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+  transform-origin: left;
+}
+
+.nav-hover:hover {
+  color: #007bff; /* Change text color on hover */
+}
+
+.nav-hover:hover::after {
+  transform: scaleX(1);
+}
+
+/* Custom navbar height and background */
+.custom-navbar {
+  height: 80px; /* Increased height */
+  background: linear-gradient(90deg, #ffffff, #f8f9fa);
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.5s ease;
+}
+
+.custom-navbar:hover {
+  background: linear-gradient(90deg, #e3e3e3, #d6d6d6);
+}
+
+/* Cursor circle effect */
+.custom-navbar::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: #f0f0f0;
+  opacity: 0.5;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width 0.5s ease, height 0.5s ease;
+}
+
+.custom-navbar:hover::after {
+  width: 150px;
+  height: 150px;
+}
+
+.custom-navbar:hover a.navbar-brand::after {
+  content: "Portfolio";
+  position: absolute;
+  color: gray;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  opacity: 1;
+}
+
+/* Text hover effect */
+.nav-hover:hover {
+  color: #007bff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .custom-navbar {
+    height: auto; /* Adjust navbar height */
+    padding: 10px 15px;
+  }
+
+  .text-gradient {
+    font-size: 1.5rem; /* Reduce size of brand text */
+  }
+
+  .nav-large .nav-link {
+    font-size: 1rem; /* Smaller font size for nav links */
+  }
+
+  .navbar-nav {
+    flex-direction: column; /* Stack links vertically */
+    align-items: flex-start;
+  }
+
+  .nav-hover::after {
+    height: 1px; /* Thinner underline for smaller screens */
+  }
+
+  .custom-navbar::after {
+    display: none; /* Remove circle effect on smaller screens */
+  }
+
+}
+@media (max-width: 576px) {
+  .text-gradient {
+    font-size: 1.2rem; /* Further reduce size for very small screens */
+    letter-spacing: 1px;
+  }
+  .jenilgajera{
+    font-size: 28px;
+  }
+
+  .navbar-nav {
+    gap: 1rem; /* Adjust spacing between links */
+  }
+  
+
+  .nav-hover:hover {
+    color: #0056b3; /* Slightly darker color for hover */
+  }
+  .mt-5 {
+    margin-top: -14rem !important;
+}
+}
+.btn-warning {
+    background-color: #0056b3 !important;
+    border-color: #0056b3 !important;
+}
+
+.btn-warning:hover {
+    background-color: #004494 !important; /* Optional: darker shade for hover effect */
+    border-color: #004494 !important;
+}
+
+.jenilgajera{
+  background: linear-gradient(90deg, #6c5fff, #7f7bfe); /* Gradient colors */
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2), 0px 10px 20px rgba(0, 0, 0, 0.1); /* Attractive shadow */
+  opacity: 0.4;
+  cursor: pointer;
+}
+.cursor-circle {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  transition: transform 0.3s ease, background 0.3s ease;
+  z-index: 1000;
+}
+.cursor-circle .circle-text {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ff9800;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.jenilgajera.hover-effect:hover ~ .cursor-circle {
+  transform: scale(1);
+  background: rgba(255, 255, 255, 0.8);
+}
+.jenilgajera.hover-effect:hover ~ .cursor-circle .circle-text {
+  opacity: 1;
+}
+
+
+
+
