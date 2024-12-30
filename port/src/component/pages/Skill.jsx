@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import { Player } from "@lottiefiles/react-lottie-player";
 import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
+import "aos/dist/aos.css"; 
 import frontend from "../icon/Front.json";
-import backend from "../icon/Backend.json";
+import backend from "../icon/backend.json";
 import {
   FaHtml5,
   FaCss3Alt,
