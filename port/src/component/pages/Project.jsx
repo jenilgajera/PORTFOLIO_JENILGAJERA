@@ -149,6 +149,7 @@ export const Project = () => {
                 Financial Vista is a Flutter-based application for managing
                 personal and business finances. It features:
               </p>
+              <a href="http://financial-vista.vercel.app">SHOW THIS APP AND DOWNLOAD APP FROM THEARE</a>
               <ul>
                 <li>Expense tracking and budget management</li>
                 <li>Report generation for insights</li>

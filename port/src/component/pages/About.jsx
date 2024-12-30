@@ -117,89 +117,116 @@ const About = () => {
         </div>
 
         {/* Right Section */}
-        <div className="col-12 col-md-6">
-          <div
-            className="card mb-3 p-2"
-            style={{ maxWidth: "90%" }}
-            data-aos="fade"
-            data-aos-easing="ease-in"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-mirror="true"
-          >
-            <div
-              className="card-body d-flex align-items-center py-2"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
-              <Player
-                autoplay
-                loop
-                src={skillsAnimation}
-                style={{ width: 50, height: 50 }}
-              />
-              <div className="ms-2">
-                <h6 className="card-title mb-1">8+ Coding Skills</h6>
-                <p className="card-text fs-6 mb-0">
-                  Expert in Flutter, HTML, CSS, JavaScript, React, Node.js, and
-                  more.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div
-            className="card mb-3 p-2"
-            style={{ maxWidth: "90%" }}
-            data-aos="fade"
-            data-aos-easing="ease-in"
-          >
-            <div
-              className="card-body d-flex align-items-center py-2"
-              data-aos="fade-up"
-              data-aos-duration="2000"
-            >
-              <Player
-                autoplay
-                loop
-                src={contributionsAnimation}
-                style={{ width: 50, height: 50 }}
-              />
-              <div className="ms-2">
-                <h6 className="card-title mb-1">Open-Source Contributions</h6>
-                <p className="card-text fs-6 mb-0">
-                  Active contributor to open-source projects.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div
-            className="card mb-3 p-2"
-            style={{ maxWidth: "90%" }}
-            data-aos="fade"
-            data-aos-easing="ease-in"
-          >
-            <div
-              className="card-body d-flex align-items-center py-2"
-              data-aos="fade-up"
-              data-aos-duration="2000"
-            >
-              <Player
-                autoplay
-                loop
-                src={projectsAnimation}
-                style={{ width: 50, height: 50 }}
-              />
-              <div className="ms-2">
-                <h6 className="card-title mb-1">10+ Projects Built</h6>
-                <p className="card-text fs-6 mb-0">
-                  Developed apps like a financial manager and portfolio website.
-                </p>
-              </div>
-            </div>
+        <div className="container">
+  <div className="row">
+    {/* Card 1 */}
+    <div className="col-12">
+      <div
+        className="card mb-3 p-2"
+        data-aos="fade"
+        data-aos-easing="ease-in"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-mirror="true"
+        style={{
+          width: "100%",
+        }}
+      >
+        <div
+          className="card-body d-flex align-items-center py-2"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <Player
+            autoplay
+            loop
+            src={skillsAnimation}
+            style={{
+              width: 50,
+              height: 50,
+            }}
+          />
+          <div className="ms-2">
+            <h6 className="card-title mb-1">8+ Coding Skills</h6>
+            <p className="card-text fs-6 mb-0">
+              Expert in Flutter, HTML, CSS, JavaScript, React, Node.js, and
+              more.
+            </p>
           </div>
         </div>
+      </div>
+    </div>
+
+    {/* Card 2 */}
+    <div className="col-12">
+      <div
+        className="card mb-3 p-2"
+        data-aos="fade"
+        data-aos-easing="ease-in"
+        style={{
+          width: "100%",
+        }}
+      >
+        <div
+          className="card-body d-flex align-items-center py-2"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          <Player
+            autoplay
+            loop
+            src={contributionsAnimation}
+            style={{
+              width: 50,
+              height: 50,
+            }}
+          />
+          <div className="ms-2">
+            <h6 className="card-title mb-1">Open-Source Contributions</h6>
+            <p className="card-text fs-6 mb-0">
+              Active contributor to open-source projects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* Card 3 */}
+    <div className="col-12">
+      <div
+        className="card mb-3 p-2"
+        data-aos="fade"
+        data-aos-easing="ease-in"
+        style={{
+          width: "100%",
+        }}
+      >
+        <div
+          className="card-body d-flex align-items-center py-2"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          <Player
+            autoplay
+            loop
+            src={projectsAnimation}
+            style={{
+              width: 50,
+              height: 50,
+            }}
+          />
+          <div className="ms-2">
+            <h6 className="card-title mb-1">10+ Projects Built</h6>
+            <p className="card-text fs-6 mb-0">
+              Developed apps like a financial manager and portfolio website.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
       </div>
     </div>
   );

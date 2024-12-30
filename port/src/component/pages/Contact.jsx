@@ -68,7 +68,7 @@ export const Contact = () => {
               <i className="bi bi-telephone-fill text-primary fs-2 me-3"></i>
               <div>
                 <h5 className="card-title">Phone</h5>
-                <p className="card-text">+91 5482959299</p>
+                <p className="card-text">+91 8780689090</p>
               </div>
             </div>
           </div>

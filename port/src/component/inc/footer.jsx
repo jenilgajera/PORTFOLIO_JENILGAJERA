@@ -13,7 +13,7 @@ const Footer = () => {
 
         {/* Copyright Section */}
         <div className="text-center">
-          <p>&copy; 2024 jess. All Rights Reserved.</p>
+          <p>&copy; 2024 jenil. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

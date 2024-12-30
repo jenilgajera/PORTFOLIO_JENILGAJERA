@@ -55,19 +55,25 @@ const Home = () => {
         {/* Left Section: Introduction */}
         <div className="col-lg-6 col-md-8 col-12 text-center text-lg-start">
           <h1
-            className="display-4 fw-bold"
+            className="display-4 fw-bold text-center text-md-start"
+            style={{ fontSize: "clamp(1.5rem, 5vw, 3rem)" }}
             data-aos="fade-up"
             data-aos-delay="300"
           >
             HEY, I'M{" "}
             <span
               className="jenilgajera hover-effect"
+              style={{
+                fontSize: "clamp(1.5rem, 5vw, 3rem)",
+                display: "inline-block",
+              }}
               data-aos="fade-up"
               data-aos-delay="500"
             >
               JENIL GAJERA
             </span>
           </h1>
+
           <p
             className="lead text-secondary mt-4"
             data-aos="fade-up"
