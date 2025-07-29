@@ -29,32 +29,37 @@
     <!-- aos animation -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
 
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
   <body class="bg-light">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
     <!-- our aos data -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    
-    <script>
-      AOS.init(
-      
-      );
-      var swiper = new Swiper('.blog-slider', {
-    spaceBetween: 30,
-    effect: 'fade',
-    loop: true,
-    mousewheel: {
-      invert: false,
-    },
-    // autoHeight: true,
-    pagination: {
-      el: '.blog-slider__pagination',
-      clickable: true,
-    }
-  });
-    </script>  </body>
-</html>
 
+    <script>
+      AOS.init();
+      var swiper = new Swiper(".blog-slider", {
+        spaceBetween: 30,
+        effect: "fade",
+        loop: true,
+        mousewheel: {
+          invert: false,
+        },
+        // autoHeight: true,
+        pagination: {
+          el: ".blog-slider__pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>

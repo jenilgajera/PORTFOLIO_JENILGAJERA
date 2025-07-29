@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import finacialvista from "../img/finacialvista.jpg";
 import hotel_managment_system from "../img/hotel_managment_system.png";
 import hotel_admin_panel from "../img/adminpanel.jpg";
+import { useEffect } from "react";
 
 export const Project = () => {
   useEffect(() => {
@@ -29,7 +29,8 @@ export const Project = () => {
               <h5 className="card-title">Financial Vista</h5>
               <p className="card-text">
                 A Flutter-based app for managing personal and business finances,
-                featuring budget tracking, report generation, and financial insights.
+                featuring budget tracking, report generation, and financial
+                insights.
               </p>
               <div className="d-flex justify-content-between">
                 <a
@@ -149,7 +150,9 @@ export const Project = () => {
                 Financial Vista is a Flutter-based application for managing
                 personal and business finances. It features:
               </p>
-              <a href="http://financial-vista.vercel.app">SHOW THIS APP AND DOWNLOAD APP FROM THEARE</a>
+              <a href="http://financial-vista.vercel.app">
+                SHOW THIS APP AND DOWNLOAD APP FROM THEARE
+              </a>
               <ul>
                 <li>Expense tracking and budget management</li>
                 <li>Report generation for insights</li>
@@ -236,9 +239,7 @@ export const Project = () => {
               ></button>
             </div>
             <div className="modal-body">
-              <p>
-                The HMS Admin Panel simplifies hotel operations through:
-              </p>
+              <p>The HMS Admin Panel simplifies hotel operations through:</p>
               <ul>
                 <li>Staff management and role assignments</li>
                 <li>Performance tracking and analytics</li>

@@ -13,7 +13,6 @@ import {
   FaReact,
   FaPhp,
   FaNodeJs,
-  FaJava,
   FaDatabase,
   FaServer,
 } from "react-icons/fa";
@@ -21,7 +20,7 @@ import { SiMongodb, SiFirebase } from "react-icons/si";
 
 export const Skill = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000 }); // Initialize AOS with default animation duration
+    AOS.init({ duration: 1000 })
   }, []);
 
   return (
